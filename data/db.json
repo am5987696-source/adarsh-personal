@@ -1,0 +1,439 @@
+{
+  "users": [
+    {
+      "id": "usr_default",
+      "name": "David Reynolds, PE",
+      "email": "am5987696@gmail.com",
+      "company": "Vanguard Civil Construction Corp.",
+      "role": "Senior Project Director",
+      "token": "auth_token_buildmind_demo"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_01",
+      "name": "Skyline Commercial Tower Phase II",
+      "code": "SCT-2026-B",
+      "projectType": "Commercial High-Rise",
+      "location": "Downtown Financial District, Metro Central",
+      "budget": 45000000,
+      "spent": 18200000,
+      "startDate": "2025-06-15",
+      "targetCompletionDate": "2027-04-30",
+      "status": "Active",
+      "progressPercentage": 42,
+      "manager": "David Reynolds, PE",
+      "description": "38-story reinforced concrete and steel frame mixed-use commercial center with 3-level underground parking.",
+      "workersOnSite": 145,
+      "safetyRating": "A-",
+      "lastInspectionDate": "2026-10-24"
+    },
+    {
+      "id": "proj_02",
+      "name": "Meridian Logistics & Distribution Hub",
+      "code": "MLH-2026-08",
+      "projectType": "Industrial Warehouse",
+      "location": "Eastern Industrial Corridor, Sector 4",
+      "budget": 28500000,
+      "spent": 23400000,
+      "startDate": "2025-02-01",
+      "targetCompletionDate": "2026-12-15",
+      "status": "Active",
+      "progressPercentage": 82,
+      "manager": "Elena Rostova",
+      "description": "500,000 sq ft automated cold-storage distribution facility with heavy post-tensioned slab flooring.",
+      "workersOnSite": 68,
+      "safetyRating": "A",
+      "lastInspectionDate": "2026-10-27"
+    },
+    {
+      "id": "proj_03",
+      "name": "Riverside Luxury Residences & Marina",
+      "code": "RLR-2026-03",
+      "projectType": "Residential Multi-Family",
+      "location": "Riverside Waterfront Quay",
+      "budget": 62000000,
+      "spent": 12400000,
+      "startDate": "2026-01-10",
+      "targetCompletionDate": "2028-08-30",
+      "status": "Active",
+      "progressPercentage": 20,
+      "manager": "Marcus Chen",
+      "description": "Twin 24-story residential towers with subterranean deep pile foundations and marine retaining walls.",
+      "workersOnSite": 92,
+      "safetyRating": "B+",
+      "lastInspectionDate": "2026-10-28"
+    },
+    {
+      "id": "proj_04",
+      "name": "Westside Transit Overpass Rehabilitation",
+      "code": "WTO-2025-R",
+      "projectType": "Civil Infrastructure",
+      "location": "Expressway Interchange Km 14",
+      "budget": 14200000,
+      "spent": 13900000,
+      "startDate": "2024-11-01",
+      "targetCompletionDate": "2026-11-30",
+      "status": "Active",
+      "progressPercentage": 96,
+      "manager": "Sarah Jenkins",
+      "description": "Structural retrofitting of post-tensioned bridge girders, seismic dampers, and cathodic protection installation.",
+      "workersOnSite": 34,
+      "safetyRating": "A",
+      "lastInspectionDate": "2026-10-26"
+    }
+  ],
+  "safetyInspections": [
+    {
+      "id": "insp_101",
+      "projectId": "proj_01",
+      "projectName": "Skyline Commercial Tower Phase II",
+      "inspectorName": "David Reynolds, PE",
+      "location": "Level 14 Perimeter Formwork Edge",
+      "conditions": "Overcast, windy (28 km/h), active rebar installation",
+      "timestamp": "2026-10-24T14:30:00Z",
+      "overallRisk": "high",
+      "summary": "Inspection identified missing visible edge perimeter cables along the southern cantilevered slab and unsecured materials on scaffolding.",
+      "hazards": [
+        {
+          "id": "h_1",
+          "title": "Inadequate Perimeter Edge Protection",
+          "severity": "high",
+          "description": "A 6-meter span of the level 14 outer perimeter slab lacks guardrail top rail and mid-rail systems.",
+          "evidence": "Visible open drop exceeding 45 meters with no secondary static line or toe board present.",
+          "recommendedAction": "Immediately halt perimeter works. Install OSHA-compliant 42-inch top rail with midrail and toe board before continuing deck activities.",
+          "priority": "Immediate"
+        },
+        {
+          "id": "h_2",
+          "title": "Unsecured Rebar Bundles Near Leading Edge",
+          "severity": "medium",
+          "description": "Loose reinforcement steel bars stacked within 1 meter of slab edge without chocking or strapping.",
+          "evidence": "Loose bundle of #6 deformed bars resting on unlevel plywood sheeting exposed to wind gusts.",
+          "recommendedAction": "Relocate bundles at least 2 meters back from perimeter; bundle securely with certified steel strapping.",
+          "priority": "High"
+        }
+      ],
+      "recommendations": [
+        "Enforce 100% tie-off using self-retracting lifelines (SRLs) when working within 2 meters of the unshielded perimeter.",
+        "Conduct immediate toolbox talk on fall protection before the morning shift on Level 14."
+      ],
+      "limitations": [
+        "Visual analysis is limited to the uploaded vantage point. Sub-slab shoring was not evaluated in this frame."
+      ],
+      "isDemoMode": false
+    },
+    {
+      "id": "insp_102",
+      "projectId": "proj_02",
+      "projectName": "Meridian Logistics & Distribution Hub",
+      "inspectorName": "Elena Rostova",
+      "location": "Bay 4 Post-Tensioning Slab & Ducting",
+      "conditions": "Indoor bay, artificial high-bay lighting, clear",
+      "timestamp": "2026-10-27T09:15:00Z",
+      "overallRisk": "low",
+      "summary": "Good safety compliance observed. Personnel equipped with class 2 high-vis vests, hard hats, and steel-toe boots.",
+      "hazards": [
+        {
+          "id": "h_3",
+          "title": "Minor Cable Routing Over Walkway",
+          "severity": "low",
+          "description": "Temporary 110V power extension cord laid across primary foot traffic aisle without rubber cable ramp.",
+          "evidence": "Yellow electrical cord crossing concrete corridor.",
+          "recommendedAction": "Install heavy-duty rubber cable crossover protector or elevate cables above 2.4 meters.",
+          "priority": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Maintain orderly housekeeping across post-tensioning anchor zones."
+      ],
+      "limitations": [
+        "Electrical load capacity was not verified via visual inspection."
+      ],
+      "isDemoMode": false
+    }
+  ],
+  "crackAnalyses": [
+    {
+      "id": "crack_01",
+      "projectId": "proj_04",
+      "projectName": "Westside Transit Overpass Rehabilitation",
+      "structureType": "Reinforced Concrete Beam",
+      "buildingAge": "18 Years",
+      "crackLocation": "Pier 3 Girder Web (45-degree angle from bearing)",
+      "approximateWidth": "0.8 mm - 1.2 mm",
+      "observedChanges": "Width widened approximately 0.2 mm over previous winter cycle",
+      "crackType": "Diagonal Shear Crack",
+      "severity": "high",
+      "urgencyLevel": "Urgent — Inspect within 48-72 Hours",
+      "visualFindings": "Diagonal cracking initiating at bearing zone inclined at roughly 42 degrees traversing the beam web, typical of principal tensile stresses exceeding concrete tensile capacity.",
+      "possibleCauses": [
+        "Shear stress concentration near support under increased live vehicular axle loading.",
+        "Possible loss of prestress in internal parabolic tendons or localized anchor slip.",
+        "Thermal cyclic deformation combined with stiff bearing pad degradation."
+      ],
+      "recommendedActions": [
+        "Install vibrating wire crack displacement transducers (crackmeters) for continuous telemetry.",
+        "Perform non-destructive Ultrasonic Pulse Velocity (UPV) to gauge internal depth and extent.",
+        "Consult bridge structural engineer of record for carbon fiber reinforced polymer (CFRP) shear strengthening jacket design."
+      ],
+      "limitations": [
+        "Assessment based purely on photograph. Structural capacity and rebar yield status cannot be determined without core sampling or detailed load rating."
+      ],
+      "isDemoMode": false
+    }
+  ],
+  "valuations": [
+    {
+      "id": "val_01",
+      "propertyType": "Commercial Office Space",
+      "location": "Central Plaza, Tower 2, Floor 18",
+      "totalArea": 12500,
+      "builtUpArea": 10800,
+      "bedrooms": 0,
+      "bathrooms": 6,
+      "age": 3,
+      "constructionQuality": "Grade A+ Corporate",
+      "condition": "Excellent",
+      "amenities": "LEED Gold Certified, 12 Dedicated Underground Parking, Fiber Dual-redundant, 24/7 Security, High-speed Elevators",
+      "estimatedValue": 6850000,
+      "estimatedValueRange": {
+        "low": 6400000,
+        "expected": 6850000,
+        "high": 7200000
+      },
+      "pricePerUnit": 548,
+      "currency": "USD",
+      "keyFactors": [
+        "High demand for prime Class A commercial space with ESG credentials.",
+        "Proximity to rapid multimodal transit hub (under 200m).",
+        "Modern MEP systems reducing operating expenditure by estimated 18%."
+      ],
+      "strengths": [
+        "Superior structural acoustics and column-free floor plate.",
+        "High parking ratio for downtown urban core."
+      ],
+      "limitations": [
+        "Macro office leasing cycle and hybrid work patterns may affect tenant cap rates."
+      ],
+      "methodology": "Direct comparative sales adjusted for Grade A corporate amenities + discounted cash flow capitalized yield model.",
+      "timestamp": "2026-10-25T11:00:00Z"
+    }
+  ],
+  "projectPlans": [
+    {
+      "id": "plan_01",
+      "projectId": "proj_01",
+      "projectName": "Skyline Commercial Tower Superstructure & Facade",
+      "projectType": "Commercial High-Rise",
+      "plotArea": 35000,
+      "plannedBuiltUpArea": 480000,
+      "floors": 38,
+      "startDate": "2026-11-01",
+      "targetCompletionDate": "2027-10-30",
+      "totalBudget": 24000000,
+      "workers": 180,
+      "phases": [
+        {
+          "id": "ph_1",
+          "name": "Substructure & Foundation Signoff",
+          "durationDays": 45,
+          "startDate": "2026-11-01",
+          "endDate": "2026-12-15",
+          "status": "Completed",
+          "budget": 3500000,
+          "dependencies": "Initial geotechnical excavation",
+          "tasks": [
+            {
+              "id": "t_1",
+              "name": "Pile integrity testing (PIT) on all 120 bored piles",
+              "durationDays": 14,
+              "status": "Completed",
+              "assignee": "GeoTech Labs",
+              "priority": "High"
+            },
+            {
+              "id": "t_2",
+              "name": "Raft slab monolithic pour (4,200 m³ C40 concrete)",
+              "durationDays": 20,
+              "status": "Completed",
+              "assignee": "Concrete Prime",
+              "priority": "Critical"
+            },
+            {
+              "id": "t_3",
+              "name": "Waterproofing membrane & French drainage backfill",
+              "durationDays": 11,
+              "status": "Completed",
+              "assignee": "HydroSeal Pro",
+              "priority": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "ph_2",
+          "name": "Tower Core & Superstructure Casting (L1-L24)",
+          "durationDays": 160,
+          "startDate": "2026-12-16",
+          "endDate": "2027-05-25",
+          "status": "In Progress",
+          "budget": 9800000,
+          "dependencies": "Substructure completion",
+          "tasks": [
+            {
+              "id": "t_4",
+              "name": "Self-climbing hydraulic core formwork system commissioning",
+              "durationDays": 15,
+              "status": "In Progress",
+              "assignee": "Doka Formwork",
+              "priority": "High"
+            },
+            {
+              "id": "t_5",
+              "name": "Post-tensioned suspended deck slab cycle (6-day target per floor)",
+              "durationDays": 120,
+              "status": "Pending",
+              "assignee": "Vanguard Civil",
+              "priority": "Critical"
+            },
+            {
+              "id": "t_6",
+              "name": "Structural steel outrigger truss fabrication & erection",
+              "durationDays": 25,
+              "status": "Pending",
+              "assignee": "Apex Steelworks",
+              "priority": "High"
+            }
+          ]
+        },
+        {
+          "id": "ph_3",
+          "name": "Unitized Curtain Wall Facade & Glazing",
+          "durationDays": 110,
+          "startDate": "2027-04-10",
+          "endDate": "2027-07-29",
+          "status": "Pending",
+          "budget": 6200000,
+          "dependencies": "Level 12 superstructure clearance",
+          "tasks": [
+            {
+              "id": "t_7",
+              "name": "Anchor bracket survey & embedded channel alignment",
+              "durationDays": 20,
+              "status": "Pending",
+              "assignee": "GlassTech Facades",
+              "priority": "High"
+            },
+            {
+              "id": "t_8",
+              "name": "Low-E double insulated glass unit installation via monorail hoist",
+              "durationDays": 75,
+              "status": "Pending",
+              "assignee": "GlassTech Facades",
+              "priority": "High"
+            },
+            {
+              "id": "t_9",
+              "name": "Air-water infiltration field mock-up testing (ASTM E1105)",
+              "durationDays": 15,
+              "status": "Pending",
+              "assignee": "Intertek QC",
+              "priority": "Critical"
+            }
+          ]
+        },
+        {
+          "id": "ph_4",
+          "name": "MEP Rough-in & Vertical Transportation",
+          "durationDays": 95,
+          "startDate": "2027-06-01",
+          "endDate": "2027-09-04",
+          "status": "Pending",
+          "budget": 4500000,
+          "dependencies": "Facade enclosure dried-in floors",
+          "tasks": [
+            {
+              "id": "t_10",
+              "name": "High-speed gearless passenger elevator guide rails installation",
+              "durationDays": 45,
+              "status": "Pending",
+              "assignee": "Otis Elevators",
+              "priority": "High"
+            },
+            {
+              "id": "t_11",
+              "name": "Primary HVAC risers, VAV distribution & BMS sensors",
+              "durationDays": 50,
+              "status": "Pending",
+              "assignee": "ThermalAir Systems",
+              "priority": "Medium"
+            }
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "title": "Ground Floor Transfer Slab Complete",
+          "date": "2026-12-15",
+          "criteria": "Full 28-day concrete cube compression strength verified > 45 MPa"
+        },
+        {
+          "title": "Superstructure Mid-Height Milestone (L20)",
+          "date": "2027-03-30",
+          "criteria": "Vertical plumbness laser survey within ±12mm tolerance"
+        },
+        {
+          "title": "Tower Structural Topping Out (L38)",
+          "date": "2027-07-15",
+          "criteria": "Crown parapet cast and final outrigger connection torqued"
+        },
+        {
+          "title": "Envelope Weather-Tight Dried-In Certification",
+          "date": "2027-08-30",
+          "criteria": "Zero water penetration under dynamic test pressure"
+        }
+      ],
+      "risks": [
+        {
+          "risk": "High wind velocity causing tower crane downtime on floors 25+",
+          "mitigation": "Incorporate 12-day weather buffer; implement night-shift modular hoisting when wind slows",
+          "severity": "High"
+        },
+        {
+          "risk": "Post-tensioning cable strand supply supply-chain disruption",
+          "mitigation": "Pre-order 100% tendon inventory with certified domestic mill test certificates",
+          "severity": "Medium"
+        },
+        {
+          "risk": "Concrete thermal gradient cracking in massive 1.8m transfer beams",
+          "mitigation": "Low-heat pozzolanic cement blend with liquid nitrogen cooling and embedded thermocouple logging",
+          "severity": "Critical"
+        }
+      ],
+      "materialConsiderations": [
+        "High-performance C50/60 concrete mix with silica fume for columns to minimize cross-sectional footprint.",
+        "Grade 60 (420 MPa) epoxy-coated rebar for all exposed perimeter cantilever balconies.",
+        "Solar heat gain coefficient (SHGC) ≤ 0.25 for western and southern glazed facade units."
+      ]
+    }
+  ],
+  "chatHistory": [
+    {
+      "id": "msg_01",
+      "role": "user",
+      "content": "What are the critical pre-pour inspection checkpoints for a post-tensioned transfer slab in high-rise construction?",
+      "timestamp": "2026-10-28T08:00:00Z"
+    },
+    {
+      "id": "msg_02",
+      "role": "model",
+      "content": "### Pre-Pour Inspection Protocol: Post-Tensioned Transfer Slab\n\nBefore authorizing concrete placement for a critical transfer slab, verify these mandatory checkpoints (aligned with ACI 318 and PTI standards):\n\n1. **Post-Tensioning Tendon Profile & Clearance**\n   - High points, low points, and inflection points must match shop drawings within **±6 mm (1/4\")** tolerance.\n   - Tendon chairs must be rigid, non-corrosive, and tied securely to prevent flotation or displacement during heavy vibration.\n   - Inspect ducting for kinks, tears, or concrete slurry intrusion points; tape all splices watertight.\n\n2. **Bursting and Anchorage Reinforcement**\n   - Confirm hairpin bursting spirals and supplementary anti-burst orthogonal rebar behind all live and dead anchorages.\n   - Ensure minimum edge clearance and pocket former alignment per PTI anchor specification.\n\n3. **Conduit and Penetration Zones**\n   - Verify electrical conduit banks or sanitary sleeves do not pass within **300 mm** of high-stress anchorage zones.\n   - Coordinate sleeve clearances so post-tensioning strands retain unobstructed parabolic profiles.\n\n4. **Formwork Shore & Re-Shoring Verification**\n   - Review multi-tier backshoring load calculations stamped by a licensed professional engineer (PE).\n   - Ensure formwork camber matches deflection pre-camber values.\n\n5. **Concrete Mix Submittal & Batching Plan**\n   - Slump flow, water-cementitious ratio (w/cm ≤ 0.38), and retarder dosage adjusted for ambient site temperature.\n   - Plan backup concrete pump truck and coordinate transit delivery tickets with maximum batch-to-pour window of 90 minutes.",
+      "timestamp": "2026-10-28T08:00:15Z"
+    }
+  ],
+  "knowledgeBookmarks": [
+    "kb_concrete_curing",
+    "kb_fall_protection",
+    "kb_pt_slabs"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "BuildMind AI — Multimodal Construction Intelligence",
+  "description": "Enterprise AI-powered multimodal construction intelligence platform for site safety monitoring, structural crack detection, property valuation, project scheduling, and civil engineering decision-making.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
